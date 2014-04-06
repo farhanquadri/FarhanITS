@@ -1,0 +1,84 @@
+.body1{
+    margin: 0 auto;
+}
+.body{
+     margin-top: 0px;
+    background-image: url( '../Images/background.png');
+}
+.maincontainer{
+     margin: 0 auto;
+    width: 980px;
+    height: 1350px;
+    background-color: lightyellow;
+    margin-top: -10px;
+    margin-bottom: -9px;
+}
+.page-content{
+    width: 873px;
+    height: 900px;
+    
+    border: 1px solid #ddd;
+    margin-left: 49px;
+    margin-top: 10px;
+    padding-top: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px darkgray; 
+}
+#heading{
+     color: #0d75a0;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 22px;
+    font-weight: bold;
+}
+#para{
+    margin-left: 40px;
+}
+.line3-content{
+     width: 900px;
+    height: 47px;
+    /*border: 1px solid #ddd;*/
+    margin-left: 30px;
+/*    margin-top: 12px;*/
+}
+#cbx1{
+margin-top: -25px;
+margin-left: 291px;
+}
+.cal1{
+    margin-left: 40px;
+}
+.c1{
+    margin-top: -11px;
+    width: 400px;
+}
+.cal2{
+    margin-left: 344px;
+    margin-top: -55px;
+/*margin-top: -69px;*/
+}
+.c2{
+  margin-top: -11px;  
+}
+#popupButtonCal1{
+    margin-top: 5px;
+    width: 190px;
+}
+.calender{
+    width: 192px;
+}
+.horizantal-divide{
+padding: 0 0 10px 0;
+margin: 9px 248px 10px 14px;
+border-style: none none solid none;
+border-width: 0 0 2px 0;
+border-color: silver;
+display: block;
+}
+.line4-content{
+    width: 900px;
+    height: 300px;
+    /*border: 1px solid #ddd;*/
+    margin-top: 208px;
+    margin-left: 32px;
+}

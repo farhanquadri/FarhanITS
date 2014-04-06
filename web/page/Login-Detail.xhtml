@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+          
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Login-Pages</title>
+        <!--<link rel="stylesheet" href="Css/Css-For-Login.css" type="text/css"/>-->
+        <h:outputStylesheet library="css" name="Css-For-Login.css"/>
+        
+    </h:head>
+       <ui:composition template="/template/template.xhtml">
+        <ui:define name="content">
+    <h:body class="body1">
+        
+        <h:form>
+        <div class="body">
+        <div class="maincontainer">
+            
+            <div class="header-image">
+                
+                
+                
+                <img src="resources/images/home_banner.jpg" width="980px"  height="300px" />
+                
+            </div>
+            
+           <div class="Page-Content">
+                <p id="Heading"><u>Careers </u></p><br/>
+                
+                <p id="para">To access your account, please identify yourself by providing the information requested in the fields below, then click "Login". 
+                If you are not registered yet, click "New user" and follow the instructions to create an account.
+                </p><br/>
+                
+                    
+                    <p id="para">Mandatory fields are marked with an asterisk (*).</p><br/><br/>
+                    
+                    <p:outputLabel for="username" value="User Name *" style="margin-left: 30px;"/>
+                    <p:inputText id="username" style="margin-left: 16px;border-radius: 5px;width: 220px;" /><br/><br/>
+                    <p:watermark for="username" value="User Name *"/>
+                    
+                    <p:outputLabel for="password" value="Password *" style="margin-left: 30px;" />
+                    <p:password id="password" style="margin-left: 26px;border-radius: 5px;width: 220px;" /><br/>
+                    <p:watermark for="password" value="Password *"/>
+                    
+                    <p:commandLink  action="Forgot-Username.xhtml"  value="Forgot your username ?" style="margin-left: 169px;" /><br/>
+                    <p:commandLink  action="Forgot-Password-Deatail.xhtml" value="Forgot your password ?" style="margin-left: 169px;"/><br/><br/>
+                    
+                    <div class="btn">
+                        <h:button value="Login" outcome="Personal-Information.xhtml" style=" border-radius: 10px;background-color: floralwhite;"/>
+                        <h:button  value="New User" outcome="Privacy-Policy-Page.xhtml" style=" border-radius: 10px;background-color: floralwhite;"/>
+                        
+                    </div>
+                        
+                    <div class="line">
+                       
+                        
+                    </div>
+                    
+                    <div class="right-content">
+                        <p>or Sign in with:</p><br/>
+                        
+                        
+                     <a href="#" class="login" title="Login with "><img src="resources/images/i_medium_universal_profile_logo.png" /></a>
+                     
+                     <a href="#" class="login1" title="Login with "><img src="resources/images/i_medium_google_logo.gif" /></a>
+  
+                     <a href="#" class="login1" title="Login with "><img src="resources/images/i_medium_yahoo_logo.gif" /></a>
+
+                        
+                    </div>
+                 
+                    
+           </div>
+            
+       </div>
+            
+            
+        </div>
+        
+                   
+                           
+        
+        </h:form>
+         </h:body>
+                </ui:define>
+    </ui:composition>
+   
+    
+</html>
+

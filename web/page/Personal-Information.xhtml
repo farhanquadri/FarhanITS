@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+        <!--<link rel="stylesheet" href="../Css/Css-For-Personal-Information.css" type="text/css"/>-->
+         <h:outputStylesheet library="css" name="Css-For-Personal-Information.css"/>
+<!--        <link rel="stylesheet" href="../Css/default.css" type="text/css"/>
+        <link rel="stylesheet" href="../Css/footerPage.css" type="text/css"/>
+        <link rel="stylesheet" href="../Css/headerPage.css" type="text/css"/>
+-->    </h:head>
+    <ui:composition template="/template/template.xhtml">
+        <ui:define name="content">
+        <h:body class="body1">
+    
+        
+        
+        <h:form>
+            
+            <div class="body">
+            
+            <div class="maincontainer">
+                
+                
+                <div class="top-content">
+                    
+                </div>
+                
+                <div class="page-content">
+                    
+                    <p id="heading">Personal Information</p>
+                    <p id="para">Please enter all relevant personal information in the fields below.</p>
+                    
+                    <div class="line1-content">
+                        
+                        <p:outputLabel for="first" value="First Name *" style="margin-left: 41px;"/>
+                        <p:outputLabel for="middle" value="Middle Name " style="margin-left:165px;"/>
+                        <p:outputLabel for="last" value="Last Name *" style="margin-left: 156px;"/><br/>
+                        
+                        <p:inputText id="first" style="margin-left: 40px;"/>
+                        <p:watermark for="first" value="First Name *" />
+                        
+                        <p:inputText id="middle" style="margin-left: 52px;"/>
+                        <p:watermark for="middle" value="Middle Name " />
+                        
+                        <p:inputText id="last" style="margin-left: 52px;"/>
+                        <p:watermark for="last" value="Last Name *" />
+                       
+                        
+                    </div>
+                    
+                    <div class="line2-content">
+                        
+                        <p:outputLabel for="add1" value="Street Address(Line 1) *" style="margin-left:41px;"/>
+                        <p:outputLabel for="add2" value="Street Address(Line 2)" style="margin-left: 72px;"/><br/>
+                        
+                        <p:inputText id="add1" style="margin-left: 40px;"/>
+                        <p:watermark for="add1" value="Street Address(Line 1) *"/>
+                        
+                        <p:inputText id="add2" style="margin-left: 52px;"/>
+                        <p:watermark for="add2" value="Street Address(Line 1)"/>
+                        
+                    </div>
+                    
+                    <div class="line3-content">
+                        
+                        <p:outputLabel for="zip" value="Zip Code *" style="margin-left:41px;"/>
+                        <p:outputLabel for="city" value="City *" style="margin-left: 192px;"/><br/>
+                        
+                        <p:inputText id="zip" style="margin-left: 40px;"/>
+                        <p:watermark for="zip" value="Zip Code *"/>
+                        
+                        <p:inputText id="city" style="margin-left: 52px;"/>
+                        <p:watermark for="city" value="City *"/>
+                        
+                    </div>
+                    
+                    <div class="line4-content">
+                        
+                        <p:fieldset  legend="Place of Residence" style="margin-left: 30px;background-color: lightyellow;">
+                            <p:outputLabel for="country" value="Country *" style="margin-left: 10px;"/><br/>
+                            <p:selectOneMenu id="country" value="#{buttonBean.number}" style="width: 250px;">  
+                                <f:selectItem itemLabel="Not Specified" itemValue="" />  
+                                <f:selectItem itemLabel="Option 1" itemValue="1" />  
+                                <f:selectItem itemLabel="Option 2" itemValue="2" />  
+                                <f:selectItem itemLabel="Option 3" itemValue="3" />  
+                           </p:selectOneMenu> <br/>
+                           
+                           
+                            <p:outputLabel for="state" value="State *" style="margin-left: 10px;"/><br/>
+                            <p:selectOneMenu id="state" value="#{buttonBean.number}" style="width: 250px;">  
+                                <f:selectItem itemLabel="Not Specified" itemValue="" />  
+                                <f:selectItem itemLabel="Option 1" itemValue="1" />  
+                                <f:selectItem itemLabel="Option 2" itemValue="2" />  
+                                <f:selectItem itemLabel="Option 3" itemValue="3" />  
+                           </p:selectOneMenu> <br/>
+                           
+                           <p:outputLabel for="region" value="Region *" style="margin-left: 10px;"/><br/>
+                           <p:selectOneMenu id="region" value="#{buttonBean.number}" style="width: 250px;">  
+                                <f:selectItem itemLabel="Not Specified" itemValue="" />  
+                                <f:selectItem itemLabel="Option 1" itemValue="1" />  
+                                <f:selectItem itemLabel="Option 2" itemValue="2" />  
+                                <f:selectItem itemLabel="Option 3" itemValue="3" />  
+                           </p:selectOneMenu> <br/>
+                            
+                        </p:fieldset>
+                        
+                    </div>
+                    
+                    <p id="para"> Contact Details</p>
+                    
+                    <p:outputLabel for="phone" value="Primary Number *" style="margin-left: 70px;"/><br/>
+                    <p:inputText id="phone" style="margin-left: 70px;"/>
+                    <p:watermark for="phone" value="Primary Number *"/>
+                    
+                    
+                    <div class=" line5-content">
+                        
+                        
+                        <p:outputLabel for="home_no" value="First Name *" style="margin-left: 41px;"/>
+                        <p:outputLabel for="work_no" value="Middle Name " style="margin-left:165px;"/>
+                        <p:outputLabel for="cell_no" value="Last Name *" style="margin-left: 156px;"/><br/>
+                        
+                        <p:inputText id="home_no" style="margin-left: 40px;"/>
+                        <p:watermark for="home_no" value="First Name *" />
+                        
+                        <p:inputText id="work_no" style="margin-left: 52px;"/>
+                        <p:watermark for="work_no" value="Middle Name " />
+                        
+                        <p:inputText id="cell_no" style="margin-left: 52px;"/>
+                        <p:watermark for="cell_no" value="Last Name *" />
+                        
+                    </div>
+                    
+                    <p:outputLabel for="email" value="Email Address *" style="margin-left: 70px;"/><br/>
+                    <p:inputText id="email" style="margin-left: 70px; width: 270px;"/>
+                    <p:watermark for="email" value="Email Address *"/>
+                    
+                    
+                    <div class="line6-content">
+                        
+                        <p:outputLabel for="cont" value="Preferred Contact Method *" style="margin-left:41px;"/>
+                        <p:outputLabel for="tcont" value="Best time to contact " style="margin-left: 192px;"/><br/>
+                        
+                        <p:selectOneMenu id="cont" value="#{buttonBean.number}" style="width: 180px; margin-left: 37px;">  
+                                <f:selectItem itemLabel="Not Specified" itemValue="" />  
+                                <f:selectItem itemLabel="Email" itemValue="1" />  
+                                <f:selectItem itemLabel="Phone" itemValue="2" />  
+                                 
+                        </p:selectOneMenu> 
+                        
+                        <p:inputText id="tcont" style="margin-left: 234px;"/>
+                        
+                        
+                    </div>
+                    
+                    <p id="pa" > Would you like to receive our newsletter?</p>
+                    <p:selectOneMenu  value="#{buttonBean.number}" style="width: 180px; margin-left: 70px;">  
+                                <f:selectItem itemLabel="Not Specified" itemValue="" />  
+                                <f:selectItem itemLabel="Yes" itemValue="1" />  
+                                <f:selectItem itemLabel="No Thank You" itemValue="2" />  
+                                 
+                   </p:selectOneMenu> <br/>
+                   
+                   <p id="para">Job Posting Notification</p>
+                   <p id="pa">Select the checkbox below to receive an email notification whenever a new
+                       position matching this profile is posted.</p>
+                   
+                   <p:selectBooleanCheckbox value="#{formBean.value1}" style="margin-left: 65px;"/>  
+                   <h:outputText value="Send an email notification whenever a new position matching this profile is posted. " style="margin-left: 10px;"/> 
+                   
+                   <div class="button">
+                        <h:button  value="Save and Continue" outcome="General-Profile.xhtml" style="border-radius: 10px;background-color: floralwhite;"/>
+                       
+                   </div>
+                </div>
+                
+            </div>
+            </div>
+            
+            
+        </h:form>
+         </h:body>
+              </ui:define>
+    </ui:composition>
+   
+  
+</html>
+

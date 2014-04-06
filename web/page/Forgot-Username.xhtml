@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Facelet Title</title>
+        <!--<link rel="stylesheet" href="Css/Css-For-Forgot-Username.css" type="text/css"/>-->
+        <h:outputStylesheet library="css" name="Css-For-Forgot-Username.css"/>
+    </h:head>
+    <ui:composition template="/template/template.xhtml">
+            <ui:define name="content">
+    <h:body class="body1">
+        
+        <h:form>
+            
+            <div class="body">
+        <div class="maincontainer">
+            
+            <div class="img">
+                <p:graphicImage value="resources/images/mlmsoftware.jpg" width="980" height="250"/>
+            </div>
+            
+            <div class="page-content">
+                
+                <p id="heading">Forgotten User Name</p>
+                
+                <p id="para">Please enter your email address below. If you have never provided your email address, leave the field empty and click "Validate".</p><br/><br/>
+                
+                <p:outputLabel for="email" value="Email Address *" style="margin-left: 30px;"/>
+                <p:inputText id="email" style="margin-left: 20px;" /><br/><br/>
+                <p:watermark for="email" value="Email Address *"/>
+                
+                <div class="button">
+                    <p:commandButton value="Validate" style="border-radius: 10px;background-color: floralwhite;" />
+                    <p:commandButton value="Cancel" style="border-radius: 10px;background-color: floralwhite;"/>
+                </div>
+               
+            </div>
+            
+            
+        </div>
+            </div>
+        
+        
+        </h:form>
+        </h:body>
+        </ui:define>
+    </ui:composition>
+    
+
+</html>
+

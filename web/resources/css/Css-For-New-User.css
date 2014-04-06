@@ -1,0 +1,39 @@
+.body1{
+     margin: 0 auto;
+}
+.body{
+    margin-top: 0px;
+    background-image: url( '../Images/background.png');
+}
+.maincontainer{
+    margin: 0 auto;
+    width: 980px;
+    height: 750px;
+    background-color: lightyellow;
+    margin-top: -10px;
+    margin-bottom: -9px;
+}
+#heading{
+    color: #0d75a0;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 0px;
+    font-weight: bold;
+}
+.page-content{
+    width: 873px;
+    height:400px;
+    
+    border: 1px solid #ddd;
+    margin-left: 49px;
+    margin-top: 0px;
+    padding-top: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px darkgray; 
+}
+.para{
+    margin-left: 30px;
+}
+.buttons{
+    padding-left: 175px;
+}

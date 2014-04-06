@@ -1,0 +1,31 @@
+
+#top {
+    position: relative;
+    background-color: #036fab;
+    color: white;
+    padding: 5px;
+    /*margin: 0px 0px 10px 0px;*/
+    margin: -10px -10px 0px -10px;
+}
+#content {
+    position: relative;
+    background-color: #dddddd;
+    padding: 5px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -10px;
+}
+
+#bottom {
+    position: relative;
+    background-color: #333333;
+    padding: 5px;
+    /*margin: 10px 0px 0px 0px;*/
+    margin: 10px -10px 0px -10px;
+    color: #363636;
+}
+
+
+
+
+

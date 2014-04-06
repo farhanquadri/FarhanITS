@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Your Profile</title>
+        <!--<link rel="stylesheet" href="../Css/Css-For-General-Profile.css" type="text/css"/>-->
+        <h:outputStylesheet library="css" name="Css-For-General-Profile.css"/>
+    </h:head>
+    <ui:composition template="/template/template.xhtml">
+        <ui:define name="content">
+    <h:body class="body">
+      
+        <h:form>
+            
+           <div class="body">
+               
+               <div class="maincontainer">
+            
+                   <div class="top-content">
+                    
+                   </div>
+                   
+                   <div class="page-content">
+                       <p id="para">Your Profile</p>
+                       
+                       <p id="pa">Basic Profile Information</p>
+                       <p style="margin-left: 60px;">Indicate the employment preferences, conditions and interests in the fields below.</p>
+                       <div class="line1-content">
+                           
+                           <div class="part1">
+                                <h:outputText value="Job Level" />  
+                                <p:selectOneListbox id="job-level"  value="#{buttonBean.number}" style="height: 120px;width: 340px;">  
+                                    <f:selectItem itemLabel="Not Specified" itemValue="1" />
+                                    <f:selectItem itemLabel="Entry Level" itemValue="2" />
+                                    <f:selectItem itemLabel="Individual Contributor" itemValue="3" />  
+                                   <f:selectItem itemLabel="Team Leader" itemValue="4" />  
+                                   <f:selectItem itemLabel="Manager" itemValue="5" />
+                                   <f:selectItem itemLabel="Director" itemValue="6" />
+                                   <f:selectItem itemLabel="Executive" itemValue="7" />
+                                  <f:selectItem itemLabel="Vendor" itemValue="8" />
+                                   
+                                   
+                               </p:selectOneListbox> 
+                               
+                           </div>
+                           
+                           <div class="part2">
+                               
+                                <h:outputText value="Education Level" />  
+                                <p:selectOneListbox id="education-level" value="#{buttonBean.number}" style="height: 120px;width: 340px;">  
+                                   <f:selectItem itemLabel="Not Specified" itemValue="1" />  
+                                   <f:selectItem itemLabel="None" itemValue="2" />  
+                                   <f:selectItem itemLabel="High School Diploma/GED" itemValue="3" />  
+                                   <f:selectItem itemLabel="Technical Diploma" itemValue="4" />
+                                   <f:selectItem itemLabel="Associate Degree/College Diploma" itemValue="5" />
+                                   <f:selectItem itemLabel="Batchelar Degree" itemValue="6" />
+                                   <f:selectItem itemLabel="Master Degree" itemValue="7" />
+                                   <f:selectItem itemLabel="Doctorate Degree" itemValue="8" />
+                                   <f:selectItem itemLabel="Higher Institution/MBA" itemValue="8" />
+                                   <f:selectItem itemLabel="Others" itemValue="8" />
+                               </p:selectOneListbox> 
+                               
+                           </div>
+                           
+                           
+                       </div>
+                       
+                       
+                           
+                           <div class="line1-content">
+                           
+                           <div class="part1">
+                                <h:outputText value="Job Type" />  
+                                <p:selectOneListbox id="job-type"  value="#{buttonBean.number}" style="height: 120px;width: 340px;">  
+                                   <f:selectItem itemLabel="Not Specified" itemValue="1" />  
+                                   <f:selectItem itemLabel="EnternShip(Non-Thesis)" itemValue="2" />  
+                                   <f:selectItem itemLabel="Cooperative (Thesis)" itemValue="3" />
+                                   <f:selectItem itemLabel="Graduate Job" itemValue="4" />
+                                   <f:selectItem itemLabel="Experienced" itemValue="5" />
+                                   <f:selectItem itemLabel="Apprenticeship" itemValue="6" />
+                                   
+                               </p:selectOneListbox> 
+                               
+                           </div>
+                           
+                           <div class="part2">
+                               
+                                <h:outputText value="Schedule" />  
+                                <p:selectOneListbox id="schedule" value="#{buttonBean.number}" style="height: 120px;width: 340px;">  
+                                   <f:selectItem itemLabel="Not Specified" itemValue="1" />  
+                                   <f:selectItem itemLabel="Full Time" itemValue="2" />  
+                                   <f:selectItem itemLabel="Part Time" itemValue="3" />  
+                                   <f:selectItem itemLabel="Worksharing" itemValue="4" />
+                                   
+                               </p:selectOneListbox> 
+                               
+                           </div>
+                           
+                           
+                       </div>
+                           
+                           <div class="line1-content">
+                           
+                           <div class="part1">
+                                <h:outputText value="Shift" />  
+                                <p:selectOneListbox id="shift"  value="#{buttonBean.number}" style="height: 120px;width: 340px;">  
+                                   <f:selectItem itemLabel="Not Specified" itemValue="1" />  
+                                   <f:selectItem itemLabel="Day Job" itemValue="2" />  
+                                   <f:selectItem itemLabel="Evening Job" itemValue="3" />
+                                   <f:selectItem itemLabel="Night Job" itemValue="4" />
+                                   <f:selectItem itemLabel="On Call" itemValue="5" />
+                                   <f:selectItem itemLabel="Variable" itemValue="6" />
+                                   <f:selectItem itemLabel="Flex Time" itemValue="7" />
+                                   <f:selectItem itemLabel="Weekend" itemValue="8" />
+                               </p:selectOneListbox> 
+                               
+                           </div>
+                           
+                           <div class="part2">
+                               
+                                <h:outputText value="employee-status" />  
+                                <p:selectOneListbox id="basic1" value="#{buttonBean.number}" style="height: 120px;width: 340px;">  
+                                   <f:selectItem itemLabel="Not Specified" itemValue="1" />  
+                                   <f:selectItem itemLabel="Regullar" itemValue="2" />  
+                                   <f:selectItem itemLabel="Temprory" itemValue="3" />  
+                                   <f:selectItem itemLabel="Intern/Co Op" itemValue="4" />
+                                   <f:selectItem itemLabel="Contractor" itemValue="5" />
+                                  
+                               </p:selectOneListbox> 
+                               
+                           </div>
+                           
+                           
+                       </div>
+                           
+                     <div class="line2-content">
+                        
+                        <p:outputLabel for="salary" value="Minimum Annual Salary" style="margin-left:41px;"/>
+                        <p:outputLabel for="currency" value="Currency" style="margin-left: 229px;"/><br/>
+                        
+                        <p:inputText id="salary" style="margin-left: 40px; width: 240px;"/>
+                        <p:watermark for="salary" value="Minimum Annual Salary *"/>
+                        
+                        <p:selectOneMenu id="currency" value="#{buttonBean.number}" style="width: 180px; margin-left: 170px;width: 340px; ">  
+                                <f:selectItem itemLabel="Not Specified" itemValue="" />  
+                                <f:selectItem itemLabel="US Dollar(USD)" itemValue="1" />  
+                                <f:selectItem itemLabel="Euro(EUR)" itemValue="2" />  
+                                <f:selectItem itemLabel="Japanese Yen(YPN)" itemValue="3" />
+                               <f:selectItem itemLabel="Pond Sterlling(GBP)" itemValue="4" />
+                               <f:selectItem itemLabel="Canadian Dollar(CAD)" itemValue="5" />
+                               <f:selectItem itemLabel="Argentine Peso(ARS)" itemValue="6" />
+                               <f:selectItem itemLabel="Austrailyan Dollar(AUD)" itemValue="7" />
+                               <f:selectItem itemLabel="Thai Bhat(THB)" itemValue="8" />
+                               <f:selectItem itemLabel="Belarussian Ruble(BYR)" itemValue="9" />
+                               <f:selectItem itemLabel="Barazillian Real(BRL)" itemValue="10" />
+                               <f:selectItem itemLabel="Chilean Peso(CLP)" itemValue="11" />
+                        </p:selectOneMenu> 
+                        
+                    </div>
+                           
+                       <div class="line3-content">
+                           <p:outputLabel for="travel" value="Travel (Up tp....)" style="margin-left: 40px;"/><br/>
+                           
+                           <p:selectOneMenu id="travel" value="#{buttonBean.number}" style="width: 180px; margin-left: 40px;width: 250px; ">  
+                                <f:selectItem itemLabel="Not Specified" itemValue="" />  
+                                <f:selectItem itemLabel="No" itemValue="1" />  
+                                <f:selectItem itemLabel="Yes 10% of the Time" itemValue="2" />
+                                <f:selectItem itemLabel="Yes 25% of the Time" itemValue="3" />  
+                                <f:selectItem itemLabel="Yes 50% of the Time" itemValue="4" />  
+                                <f:selectItem itemLabel="Yes 75% of the Time" itemValue="5" />  
+                                <f:selectItem itemLabel="Yes 100% of the Time" itemValue="6" />  
+                                
+                                 
+                        </p:selectOneMenu> <br/><br/>
+                           
+                        <p:outputLabel for="notice" value="Advance Notice" style="margin-left: 40px;"/>
+                        
+                        <p:selectOneMenu id="notice" value="#{buttonBean.number}" style="width: 180px; margin-left: 40px;width: 250px; ">  
+                                <f:selectItem itemLabel="Not Specified" itemValue="" />  
+                                <f:selectItem itemLabel="No Notice Necessary" itemValue="1" />  
+                                <f:selectItem itemLabel="Two Week" itemValue="2" />
+                                <f:selectItem itemLabel="Three Week" itemValue="2" />
+                                <f:selectItem itemLabel="Four Week" itemValue="2" />
+                                <f:selectItem itemLabel="Negotiable" itemValue="2" />
+                                <f:selectItem itemLabel="Two Months" itemValue="2" />
+                                <f:selectItem itemLabel="Two Months" itemValue="2" />
+                                 
+                        </p:selectOneMenu> <br/>
+                           
+                       </div>
+                           
+                       
+                       <div class="button">
+                            <h:button  value="Save and Continue" outcome="Work-Experience.xhtml" style="border-radius: 10px;background-color: floralwhite;"/>
+                           
+                       </div>
+                       
+                   </div>
+            
+            
+            
+                 </div>
+           </div>
+        </h:form>
+        
+    </h:body>
+        </ui:define>
+    </ui:composition>
+</html>
+

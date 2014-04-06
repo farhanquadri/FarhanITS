@@ -1,0 +1,48 @@
+.body{
+    margin-top: 0px;
+    background-image: url( '../Images/background.png');
+}
+.maincontainer{
+    margin: 0 auto;
+    width: 980px;
+    height: 600px;
+    background-color: lightyellow;
+    margin-bottom: -9px;
+    margin-top: -10px;
+}
+#heading{
+     color: #0d75a0;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 0px;
+    font-weight: bold;
+}
+.page-content{
+     width: 873px;
+    height: 540px;
+    
+    border: 1px solid #ddd;
+    margin-left: 49px;
+    margin-top: 0px;
+    padding-top: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px darkgray; 
+}
+.btn{
+    margin-left: 30px;
+}
+.iframe{
+border-color: silver;
+border-style: solid;
+border-width: 1px;
+display: block;
+height: 250px;
+margin:19px 31px 35px;
+background-color: #ffffff;
+overflow: auto;
+padding: 0 6px 20px 6px;
+}
+#para1{
+    color: #0d75a0;
+    font-weight: bold;
+}

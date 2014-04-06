@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Work-Experience</title>
+        <link rel="stylesheet" href="../Css/Css-For-Work-Experience.css" type="text/css"/>
+        <h:outputStylesheet library="css" name="Css-For-Work-Experience.css"/>
+        
+    </h:head>
+    <ui:composition template="/template/template.xhtml">
+           <ui:define name="content">
+    <h:body class="body1">
+        
+        <h:form>
+            <div class="body">
+                
+                <div class="maincontainer">
+                    
+                    <div class="header-image">
+                    
+                    <img src="../resources/images/home_banner.jpg" width="980px"  height="300px" />
+                   </div>
+                    
+                    <div class="page-content">
+                        
+                        
+                        
+                        <p id="heading">Work Experience</p>
+                        
+                        <p id="para">List the work experiences below, starting with the most relevant one.</p>
+                        
+                        <p:outputLabel  value="Work Experience 1" style="margin-left: 40px;"/><br/><br/>
+                         <p:selectBooleanCheckbox  value="#{formBean.value1}" style="margin-left: 50px;"/> 
+                         <p:outputLabel value="Current Job" style="margin-left: 10px;"/><br/><br/>
+                        
+                         
+                         <div class="line3-content">
+                        
+                        <p:outputLabel for="job" value="Job Title *" style="margin-left:41px;"/>
+                        <p:outputLabel for="area" value="Functional Area *" style="margin-left: 250px;"/><br/>
+                        
+                        <p:inputText id="job" style="margin-left: 40px;width: 220px;"/>
+                        <p:watermark for="job" value="Job Title *"/>
+                        <div id="cbx1">
+                         <p:selectOneMenu id="area" value="#{buttonBean.number}" style="width: 250px;margin-left: 54px;">  
+                                <f:selectItem itemLabel="Not Specified" itemValue="" />  
+                                <f:selectItem itemLabel="Option 1" itemValue="1" />  
+                                <f:selectItem itemLabel="Option 2" itemValue="2" />  
+                                <f:selectItem itemLabel="Option 3" itemValue="3" />  
+                           </p:selectOneMenu> <br/><br/>
+                        </div>
+                        
+                        <p:outputLabel for="employe" value="Employer *" style="margin-left: 41px;"/><br/>
+                        <p:inputText id="employe" style="margin-left: 41px;width: 220px;"/>
+                        <p:watermark for="employe" value="Employer *"/>
+                        
+                        <div class="cal1">
+                            <p>Start Date *</p>
+                            <div class="c1">
+                                <p:calendar  value="#{calendarBean.date2}" id="popupButtonCal1" showOn="button" styleClass="calender"/>  
+                            </div>
+                             
+                        </div>
+                        
+                        <div class="cal2">
+                            <p>End Date *</p>
+                            <div class="c2">
+                            <p:calendar  value="#{calendarBean.date3}" id="popupButtonCal2" showOn="button"  style="width: 192px;margin-top: 5px;" />  
+                            </div>
+                             
+                        </div>
+                        <span class="horizantal-divide"></span>
+                        <p:outputLabel  value="Work Experience 2" style="margin-left: 12px;"/><br/><br/>
+                         <p:selectBooleanCheckbox  value="#{formBean.value1}" style="margin-left: 50px;" /> 
+                         <p:outputLabel value="Current Job" style="margin-left: 10px;"/><br/><br/>
+                        
+                    </div>
+                         <div class="line4-content">
+                             
+                             
+                             <p:outputLabel for="job" value="Job Title *" style="margin-left:41px;"/>
+                        <p:outputLabel for="area" value="Functional Area *" style="margin-left: 250px;"/><br/>
+                        
+                        <p:inputText id="job" style="margin-left: 40px;width: 220px;"/>
+                        <p:watermark for="job" value="Job Title *"/>
+                        <div id="cbx1">
+                         <p:selectOneMenu id="area" value="#{buttonBean.number}" style="width: 250px;margin-left: 54px;">  
+                                <f:selectItem itemLabel="Not Specified" itemValue="" />  
+                                <f:selectItem itemLabel="Option 1" itemValue="1" />  
+                                <f:selectItem itemLabel="Option 2" itemValue="2" />  
+                                <f:selectItem itemLabel="Option 3" itemValue="3" />  
+                           </p:selectOneMenu> <br/><br/>
+                        </div>
+                        
+                        <p:outputLabel for="employe" value="Employer *" style="margin-left: 41px;"/><br/>
+                        <p:inputText id="employe" style="margin-left: 41px;width: 220px;"/>
+                        <p:watermark for="employe" value="Employer *"/>
+                        
+                        <div class="cal1">
+                            <p>Start Date *</p>
+                            <div class="c1">
+                                <p:calendar  value="#{calendarBean.date2}" id="popupButtonCal1" showOn="button" styleClass="calender"/>  
+                            </div>
+                             
+                        </div>
+                        
+                        <div class="cal2">
+                            <p>End Date *</p>
+                            <div class="c2">
+                            <p:calendar  value="#{calendarBean.date3}" id="popupButtonCal2" showOn="button"  style="width: 192px;margin-top: 5px;" />  
+                            </div>
+                             
+                             
+                         </div>
+                         
+                        
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                        </div>
+                
+                
+                
+                
+            </div>
+            
+            
+                </div>
+            
+                 
+            
+            
+        </h:form>
+    </h:body>
+           </ui:define>
+    </ui:composition>
+</html>
+

@@ -1,0 +1,68 @@
+.body1{
+     margin: 0 auto;
+}
+.body{
+   
+    margin-top: 0px;
+    background-image: url( '../Images/background.png');
+    
+}
+.maincontainer{
+    margin: 0 auto;
+    width: 980px;
+    height: 750px;
+    background-color: lightyellow;
+    margin-top: -10PX;
+    margin-bottom: -9px;
+
+}
+.Page-Content{
+    width: 873px;
+    height: 400px;
+    
+    /*border: 1px solid #ddd;*/
+    margin-left: 49px;
+    margin-top: 12px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px darkgray; 
+}
+.header-image{
+    width: 979px;
+    height: 300px;
+    border: 1px solid #ddd;
+}
+#Heading{
+    color: #0d75a0;
+    font-size: 25px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+#para{
+    font-size: 15px;
+    margin-left: 30px;
+}
+#username{
+    margin-left: 30px;
+}
+
+.btn{
+   margin-left: 166px;
+}
+.line{
+   float: left;
+width: 10px;
+background: #DD0003;
+padding: 0 0 100px 0;
+border-radius: 10px;
+margin-left: 441px;
+width: 5px;
+height: 64px;
+margin-top: -193px;
+
+}
+.right-content{
+    float: right;
+    margin-right: 220px;
+    margin-top: -190px;
+    font-size: 15px;
+}

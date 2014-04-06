@@ -1,0 +1,79 @@
+ #footer_wrapper{
+            clear: both;
+            width: 100%;
+            font-family:Myriad Pro;
+            font-size:14px;
+            overflow-x: hidden;
+        }
+
+        #footer {
+            width: 920px;
+            margin: 0 auto;
+            padding: 20px 10px;
+            color: #40464f;
+        }
+
+        #footer a { 
+            text-decoration: none; 
+        }
+
+        #footer .footer_list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #footer .footer_list li {
+            line-height:25px;
+            list-style-image:url('../resources/images/CICRLE.png');
+            color:#5c5c5c;
+        }
+
+        #footer .footer_list li a { 
+            font-weight: normal;
+            text-decoration: none;
+            color:#bebdbd;
+
+        }
+        #footer .footer_list  a:hover{
+            text-decoration:underline;
+            color:#fff;
+        }
+       .socialicons
+        {
+            margin-right:4px;
+        }
+
+        .socialicons img
+        {
+            margin-bottom:-7px;
+        }
+        #copyright_wrapper {
+            clear: both;
+            background:#363636;
+            width: 100%;
+        }
+
+        #copyright {
+            width: 960px;
+            font-size: 12px;
+            margin: 0 auto;
+            padding: 10px 10px 15px;
+            color:#d5d5d5;
+            text-align: right;
+            border-top:2px solid #393939;
+        }
+
+        #copyright  a {
+            color: #d5d5d5;
+            text-decoration: none;
+        }
+
+       .box_strip
+        {
+            height:106px;
+            width:40px;
+            background: url(../resources/images/sideshadow.png) no-repeat;
+            float:left;
+            margin-top:27px;
+        }
